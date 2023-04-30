@@ -53,6 +53,7 @@ while True:
             imgWhite[:, wGap:wCal + wGap] = imgResize
             prediction, index = classifier.getPrediction(imgWhite, draw=False)
             print(prediction, index)
+            text_label.config(text=labels[index])
 
         else:
             k = imgSize / w
@@ -97,6 +98,7 @@ while True:
                 imgWhite[:, wGap:wCal + wGap] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
                 print(prediction, index)
+                text_label.config(text=labels[index])
 
             else:
                 k = imgSize / w
@@ -107,7 +109,7 @@ while True:
                 imgWhite[hGap:hCal + hGap, :] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
                 text_label.config(text=labels[index])
-                
+
             cv2.rectangle(imgOutput, (x - offset, y - offset - 50),
                           (x - offset + 90, y - offset - 50 + 50), (255, 0, 255), cv2.FILLED)
             cv2.putText(imgOutput, labels[index], (x, y - 26), cv2.FONT_HERSHEY_COMPLEX, 1.7, (255, 255, 255), 2)
