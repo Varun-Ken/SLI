@@ -72,8 +72,8 @@ while True:
                       (x + w+offset, y + h+offset), (255, 0, 255), 4)
 
 
-        cv2.imshow("ImageCrop", imgCrop)
-        cv2.imshow("ImageWhite", imgWhite)
+        """cv2.imshow("ImageCrop", imgCrop)
+        cv2.imshow("ImageWhite", imgWhite)"""
     elif hands and len(hands) == 1:
         success, img = cap.read()
         imgOutput = img.copy()
@@ -116,8 +116,8 @@ while True:
             cv2.rectangle(imgOutput, (x - offset, y - offset),
                           (x + w + offset, y + h + offset), (255, 0, 255), 4)
 
-            cv2.imshow("ImageCrop", imgCrop)
-            cv2.imshow("ImageWhite", imgWhite)
+            """cv2.imshow("ImageCrop", imgCrop)
+            cv2.imshow("ImageWhite", imgWhite)"""
 
     cv2.imshow("Image", imgOutput)
     root.update()  # Update the Tkinter window
