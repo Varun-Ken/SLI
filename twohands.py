@@ -15,11 +15,11 @@ imgSize = 300
 folder = "Data/"
 counter = 0
 
-labels = ["Home","Good","Help","How","Name"]
+labels = ["Again", "Are", "Baby", "Bad", "Busy", "Bye", "Car", "Cat", "Cook", "Dog", "Drink", "Eat", "Exicted", "Friend", "Girl", "Go", "Good", "Happy", "Hello", "Help", "Home", "How", "I", "Learn", "Like", "More", "Name", "Need", "No", "Now", "Phone", "Please", "Right", "Road", "Same", "See you later", "Sugar", "Thank you", "Time", "Tired", "Want", "Water", "When", "Who", "Write", "Wrong", "Yes", "You", "Your", "Boy"]
 
 # Create a new Tkinter window
 root = tk.Tk()
-root.geometry("300x300")
+root.geometry("350x350")
 
 # Create a label widget to display the recognized text
 text_label = tk.Label(root, text="", font=("Helvetica", 48))
