@@ -24,7 +24,7 @@ title_label.pack(pady=(0,20))
 
 # Function to open dataCollection.py file
 def open_sign_to_text():
-    os.system("python SignToText.py")
+    os.system("python signToText.py")
 
 # Function to open test.py file
 def open_text_to_sign():
